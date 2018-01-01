@@ -1,0 +1,30 @@
+# -*- coding:utf-8 -*-
+
+from sys import exit
+from sys import argv
+from account import *
+from themeworld import *
+
+# 传送门 lightship   主题世界 themeworld
+def start():
+    print "欢迎来到switch世界！\n这里有很多传送門能够帮助你去往不同的\
+主题世界，具体有多少，我也搞不清。\n因为主题世界是在不停生成的:\
+真实世界有多少知识，有多少信息或者\n有多少想象，这里就有多少主题世界。\
+是不是很酷？\n"
+    print "提示：\n1.进入遊戏需要注册帐号，输入用户名，邮箱和密码就可以注册。\n\
+2.在任何有 > 提示的地方，都可以输入 exit 退出游戏\n\
+3.登录后，在任何有 > 提示的地方，都可以输入 account 来查看你的账户详情。\n"
+    account()
+    themeworld()
+          
+if len(argv) == 1:
+    print "请按照一下格式进行输入：\n\
+python main.py -h 得到相关帮助信息；\n\
+python main.py run 正式运行程序。"
+
+
+
+
+
+
+start()

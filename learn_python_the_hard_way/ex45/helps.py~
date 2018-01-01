@@ -1,0 +1,3 @@
+def helps():
+    files = open("helps.txt")
+    print files.read()
