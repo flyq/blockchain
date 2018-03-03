@@ -4,6 +4,7 @@ from account import account_get
 from sys import exit
 from themeworld_1 import themeworld_1
 from util import *
+from themeworld_4.themeworld_4 import themeworld_4
 
 def themeworld():
     print "通过输入 details 查看不同传送门和主题世界的介绍。\n"
@@ -42,7 +43,8 @@ def themeworld_how_to_enter():
     if is_int(next):
         if next == "1":
             themeworld_1()
-            
+        elif next == "4":
+            themeworld_4()            
         else:
             print "%s号主题世界正在建设中，敬请期待..." % next
             themeworld_how_to_enter()

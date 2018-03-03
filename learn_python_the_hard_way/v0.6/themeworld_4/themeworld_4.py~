@@ -1,0 +1,30 @@
+# -*- coding:utf-8 -*-
+
+from sys import exit
+from account import account_get
+from XMR import XMR
+
+digital_currency = ["BTC","BCH","XRP","ETH","ETC","LTC","DASH","EOS","OMG","ZEC","ACE","ACT","AMM","ARK","AST","AVT","BCD","BCH","BCX","BNT","BTM","BT2","CMT","CTR","CVC","DASH","DAT","DGB","DGD","DNT","EDO","ELF","ENG","EOS","ETC","ETH","EVX","FUN","GAS","GNT","GNX","HSR","ICN","ICX","IOTA","ITC","KCASH","KNC","LINK","LRC","LTC","MANA","MCO","MDA","MTH","MTL","NEO","NULS","OAX","OMG","PAY","PPT","PRO", "QTUM","QVT","RCN","RDN","REQ","SALT","SAN","SBTC","SNGLS","SNM","SNT","STORJ","SUB","SWFTC","TNB","XMR"]
+
+def themeworld_4():
+    print "欢迎来到4号主题世界，这是一个关于代币的世界"
+    
+    print "这里有%d种代币，它们分别是" % len(digital_currency) , digital_currency
+
+    print "\n你想要哪一种？"
+    next = raw_input("> ")
+    if next == "BTC":
+	print "There are lots of BTC here."
+        BTC()
+    elif next == "XMR":
+        XMR()
+    elif next == "exit":
+	exit(0)
+    elif next == "account":
+	account_get()
+	themeworld_4()
+    else:
+    	print "There are no what you choose, select others."
+
+
+

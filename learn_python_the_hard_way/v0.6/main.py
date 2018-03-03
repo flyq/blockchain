@@ -19,7 +19,7 @@ def start():
     themeworld()
           
 if len(argv) == 1:
-    print "请按照一下格式进行输入：\n\
+   print "请按照以下格式进行输入：\n\
 python main.py -h 得到相关帮助信息；\n\
 python main.py run 正式运行程序。"
 elif len(argv) == 2:
