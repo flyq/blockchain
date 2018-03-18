@@ -1,0 +1,43 @@
+=============== Mar 4, 2018 (CST) ===============
+19:29:08.812480 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:29:08.815315 db@open opening
+19:29:08.816118 version@stat F·[] S·0B[] Sc·[]
+19:29:08.826648 db@janitor F·2 G·0
+19:29:08.826768 db@open done T·11.388991ms
+=============== Mar 4, 2018 (CST) ===============
+19:30:30.684218 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:30:30.684437 version@stat F·[] S·0B[] Sc·[]
+19:30:30.684449 db@open opening
+19:30:30.684492 journal@recovery F·1
+19:30:30.688313 journal@recovery recovering @1
+19:30:30.691670 memdb@flush created L0@2 N·9 S·583B "Ha\x15..BM\x04,v3":"r\x00\x00..BM\x04,v5"
+19:30:30.695011 version@stat F·[1] S·583B[583B] Sc·[0.25]
+19:30:30.702106 db@janitor F·3 G·0
+19:30:30.702153 db@open done T·17.693023ms
+19:32:04.654053 db@close closing
+19:32:04.654156 db@close done T·102.183µs
+=============== Mar 4, 2018 (CST) ===============
+19:32:21.496688 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:32:21.498780 version@stat F·[1] S·583B[583B] Sc·[0.25]
+19:32:21.498801 db@open opening
+19:32:21.498918 journal@recovery F·1
+19:32:21.503997 journal@recovery recovering @3
+19:32:21.506151 memdb@flush created L0@5 N·3 S·290B "Blo..ion,v11":"dbU..ata,v12"
+19:32:21.511730 version@stat F·[2] S·873B[873B] Sc·[0.50]
+19:32:21.514674 db@janitor F·4 G·0
+19:32:21.514735 db@open done T·15.910562ms
+19:36:35.333912 db@close closing
+19:36:35.334073 db@close done T·159.475µs
+=============== Mar 4, 2018 (CST) ===============
+19:36:37.123439 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:36:37.123644 version@stat F·[2] S·873B[873B] Sc·[0.50]
+19:36:37.123749 db@open opening
+19:36:37.123909 journal@recovery F·1
+19:36:37.128000 journal@recovery recovering @6
+19:36:37.129571 memdb@flush created L0@8 N·2 S·243B "Blo..ion,v15":"Las..der,v16"
+19:36:37.133686 version@stat F·[3] S·1KiB[1KiB] Sc·[0.75]
+19:36:37.135965 db@janitor F·5 G·0
+19:36:37.136047 db@open done T·12.22257ms
+=============== Mar 5, 2018 (CST) ===============
+00:35:14.944884 db@close closing
+00:35:14.945509 db@close done T·624.47µs

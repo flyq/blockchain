@@ -1,0 +1,14 @@
+admin.nodeInfo
+miner.start(1)
+miner.stop()
+admin.nodeInfo
+eth.coinbase
+eth.accounts[0]
+eth.getBalance(eth.accounts[0])
+eth.sendTransaction({from:eth.accounts[0],to:"0x587e57a516730381958f86703b1f8e970ff445d9",value:web3.toWei(3,"ether")})
+eth.sendTransaction({from:eth.accounts[0],to:"0x0f548565c4fe6298bfb6f9212a00bdaf12076a65",value:web3.toWei(3,"ether")})
+miner.start(1)
+miner.start()
+eth.getBalance(eth.accounts[0])
+eth.accounts[0]
+eth.getBalance(eth.accounts[0])
