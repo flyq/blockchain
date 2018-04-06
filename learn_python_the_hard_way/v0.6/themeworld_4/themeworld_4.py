@@ -2,7 +2,6 @@
 
 from sys import exit
 from account import account_get
-from XMR import XMR
 
 digital_currency = ["ACE","ACT","AELF","AMM","ARK","AST","AVT","BAT","BCD","BCH","BTC","BCX","BIFI","BNT","BTG","BTM","BT2","CMT","CTR","CVC","DASH","DAT","DGB","DGD","DNT","EDO","ELF","ENG","EOS","ETC","ETH","EVX","FUN","GAS","GNT","GNX","HSR","ICN","ICX","IOTA","ITC","KCASH","KNC","LINK","LRC","LTC","MANA","MCO","MDA","MTH","MTL","GNAS","NEO","NULS","OAX","OMG","PAY","PPT","PRO","QASH","QSP","QTUM","QVT","RCN","RDN","REQ","SALT","SAN","SBTC","SMT","SNGLS","SNM","SNT","STORJ","SUB","SWFTC","TNB","TNT","USDT","VEN","WAX","XMR","XRP","XLM","XUC","ZEC","ZRX"]
 
@@ -15,9 +14,7 @@ def themeworld_4():
     next = raw_input("> ")
     if next == "BTC":
 	print "There are lots of BTC here."
-        BTC()
-    elif next == "XMR":
-        XMR()
+        exit(0)
     elif next == "exit":
 	exit(0)
     elif next == "account":

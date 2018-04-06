@@ -33,8 +33,8 @@ def is_int(s):
         
 
 def themeworld_amount():
-    amount = 1 # 可以把amount改为导入的模组数
-    print "这里有%d个主题世界。" % amount
+    amount = 2 # 可以把amount改为导入的模组数
+    print "这里有%d个主题世界。1 and 4" % amount
 
 def themeworld_how_to_enter():
     print "通过输入n，可以进入n号传送门并带你进入n号主题世界。"

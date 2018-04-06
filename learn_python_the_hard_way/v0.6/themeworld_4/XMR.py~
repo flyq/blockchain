@@ -1,8 +1,0 @@
-#-*- coding:utf-8 -*-
-
-def XMR():
-    XMR = {
-        "fuck":1
-        }
-    print XMR
-XMR()
