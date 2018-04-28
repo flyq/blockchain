@@ -1,0 +1,36 @@
+{
+    "port": 1235,
+    "cdnUrl": "http://localhost:1235/file/",
+    "logger": {
+        "appenders": {
+            "file": {
+                "type": "file",
+                "filename": "logs.log"
+            },
+            "console": {
+                "type": "console"
+            }
+        },
+        "categories": {
+            "default": {
+                "appenders": [
+                    "file",
+                    "console"
+                ],
+                "level": "debug"
+            }
+        }
+    },
+    "mongodb": {
+        "uri": "mongodb://localhost:27017/smartSignature"
+    },
+    "web3": {
+        "rpc": "https://ropsten.infura.io/"
+    },
+    "etherscan": {
+        "api": "http://api-ropsten.etherscan.io"
+    },
+    "api": {
+        "showFullErr": true
+    }
+}

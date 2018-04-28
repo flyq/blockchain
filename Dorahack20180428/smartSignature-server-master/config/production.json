@@ -1,0 +1,10 @@
+{
+    "port": 80,
+    "cdnUrl": "http://35.194.220.56/file/",
+    "mongodb": {
+        "uri": "mongodb://mongo-service/smartSignatureProduction005"
+    },
+    "api": {
+        "showFullErr": false
+    }
+}

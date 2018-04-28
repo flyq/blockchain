@@ -1,0 +1,10 @@
+{
+    "port": 80,
+    "cdnUrl": "http://35.185.158.80/file/",
+    "mongodb": {
+        "uri": "mongodb://mongo-service/smartSignatureTesting"
+    },
+    "api": {
+        "showFullErr": true
+    }
+}
