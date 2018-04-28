@@ -18,12 +18,20 @@ hackthon活动
 
 ### 文件目录
 ./contract solidity合约源码
+
 ./smartSignature-server-master 服务器端 主要api/下面实现和合约交互，db/下面和mongoDB交互
+
 ./sponsor-token-website-master 前端
 
 ### 合约玩法
 mainContract 实现发布消息，点赞，踩，结算功能
+
 reputation 实现在某个标签下的个人信誉系统
+
 bet 实现对某个事件的对赌
+
 reputation 实现众筹，而且还有奖励
 
+https://ropsten.etherscan.io/tx/0x9fbb30a27186a76f9f05370cd53e8a9af74eb7d7c2f699a87a610b5631f04d26
+
+https://ropsten.etherscan.io/tx/0x5768a51e41a8f62e9cd8e6a9afb127085fb92c55526b801cbc81b5c2e64f85f7
