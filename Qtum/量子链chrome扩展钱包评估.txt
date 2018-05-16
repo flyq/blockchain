@@ -1,0 +1,523 @@
+1. NAS网页钱包统计：
+查看有多少个文件：
+ls -lR|grep "^-"|wc -l 
+53
+
+.
+├── check.html
+├── contract.html
+├── css
+│   ├── base.css
+│   ├── codemirror.css
+│   └── ui-block.css
+├── img
+│   ├── background.png
+│   ├── logo-b.png
+│   ├── logo.png
+│   └── prompt.png
+├── index.html
+├── js
+│   ├── 1-localSave.js
+│   ├── home.v1.js
+│   ├── i18n.js
+│   └── ui-block.js
+├── lib
+│   ├── Blob.js
+│   ├── blockies.min.js
+│   ├── bootbox.min.js
+│   ├── bootstrap-4.0.0-dist
+│   │   ├── css
+│   │   │   ├── bootstrap.css
+│   │   │   ├── bootstrap.css.map
+│   │   │   ├── bootstrap-grid.css
+│   │   │   ├── bootstrap-grid.css.map
+│   │   │   ├── bootstrap-grid.min.css
+│   │   │   ├── bootstrap-grid.min.css.map
+│   │   │   ├── bootstrap.min.css
+│   │   │   ├── bootstrap.min.css.map
+│   │   │   ├── bootstrap-reboot.css
+│   │   │   ├── bootstrap-reboot.css.map
+│   │   │   ├── bootstrap-reboot.min.css
+│   │   │   └── bootstrap-reboot.min.css.map
+│   │   └── js
+│   │       ├── bootstrap.bundle.js
+│   │       ├── bootstrap.bundle.js.map
+│   │       ├── bootstrap.bundle.min.js
+│   │       ├── bootstrap.bundle.min.js.map
+│   │       ├── bootstrap.js
+│   │       ├── bootstrap.js.map
+│   │       ├── bootstrap.min.js
+│   │       └── bootstrap.min.js.map
+│   ├── codemirror
+│   │   ├── codemirror.js
+│   │   └── javascript.js
+│   ├── FileSaver.min.js
+│   ├── jquery-3.3.1.min.js
+│   ├── jquery.qrcode.min.js
+│   ├── js-beautify-1.7.5
+│   │   └── beautify.js
+│   ├── nebulas.js
+│   └── prismjs-1.13.0
+│       ├── prism.css
+│       └── prism.js
+├── LICENSE
+├── n1WhshqQjeLJrzgR2fSvjx4yAfwHJTwe2g2
+├── README.md
+├── sendNas.html
+├── sendOffline.html
+├── server.j
+└── viewWalletInfo.html
+
+10 directories, 53 files
+
+工作量：
+6个html文件，去掉空行，有
+find ./ -name "*.html" |xargs cat|grep -v ^$|wc -l
+1887
+1887行
+
+20个js文件，去掉空行，有
+find ./ -name "*.js" |xargs cat|grep -v ^$|wc -l
+56680
+56680行
+
+
+2.NAS插件钱包统计：
+ls -lR|grep "^-"|wc -l 
+85
+
+.
+├── background.js
+├── contentscript.js
+├── example
+│   ├── nebPay.js
+│   ├── TestPage_new.html
+│   └── TestPage_old.html
+├── html
+│   ├── check.html
+│   ├── contract.html
+│   ├── css
+│   │   ├── base.css
+│   │   ├── bootstrap.css
+│   │   ├── bootstrap.min.css
+│   │   ├── codemirror.css
+│   │   └── ui-block.css
+│   ├── images
+│   │   ├── background.png
+│   │   ├── logo-b.png
+│   │   └── logo.png
+│   ├── index.html
+│   ├── js
+│   │   ├── 1-localSave.js
+│   │   ├── check.js
+│   │   ├── contract.js
+│   │   ├── global.js
+│   │   ├── home.v1.js
+│   │   ├── i18n.js
+│   │   ├── index.js
+│   │   ├── main.js
+│   │   ├── nebulas.js
+│   │   ├── options.js
+│   │   ├── sendNas.js
+│   │   ├── sendOffline.js
+│   │   ├── ui-block.js
+│   │   └── viewWalletInfo.js
+│   ├── lib
+│   │   ├── Blob.js
+│   │   ├── blockies.min.js
+│   │   ├── bootbox.min.js
+│   │   ├── bootstrap-4.0.0-dist
+│   │   │   ├── css
+│   │   │   │   ├── bootstrap.css
+│   │   │   │   ├── bootstrap.css.map
+│   │   │   │   ├── bootstrap-grid.css
+│   │   │   │   ├── bootstrap-grid.css.map
+│   │   │   │   ├── bootstrap-grid.min.css
+│   │   │   │   ├── bootstrap-grid.min.css.map
+│   │   │   │   ├── bootstrap.min.css
+│   │   │   │   ├── bootstrap.min.css.map
+│   │   │   │   ├── bootstrap-reboot.css
+│   │   │   │   ├── bootstrap-reboot.css.map
+│   │   │   │   ├── bootstrap-reboot.min.css
+│   │   │   │   └── bootstrap-reboot.min.css.map
+│   │   │   └── js
+│   │   │       ├── bootstrap.bundle.js
+│   │   │       ├── bootstrap.bundle.js.map
+│   │   │       ├── bootstrap.bundle.min.js
+│   │   │       ├── bootstrap.bundle.min.js.map
+│   │   │       ├── bootstrap.js
+│   │   │       ├── bootstrap.js.map
+│   │   │       ├── bootstrap.min.js
+│   │   │       └── bootstrap.min.js.map
+│   │   ├── codemirror
+│   │   │   ├── codemirror.js
+│   │   │   └── javascript.js
+│   │   ├── FileSaver.min.js
+│   │   ├── jquery-3.3.1.min.js
+│   │   ├── jquery.qrcode.min.js
+│   │   ├── js-beautify-1.7.5
+│   │   │   └── beautify.js
+│   │   ├── nebulas.js
+│   │   └── prismjs-1.13.0
+│   │       ├── prism.css
+│   │       └── prism.js
+│   ├── main.html.ori
+│   ├── options.html
+│   ├── sendNas.html
+│   ├── sendOffline.html
+│   ├── server.js
+│   └── viewWalletInfo.html
+├── images
+│   ├── background.png
+│   ├── glyphicons-halflings.png
+│   ├── glyphicons-halflings-white.png
+│   ├── icon_128.png
+│   ├── icon_19.png
+│   ├── icon_38.png
+│   ├── logo-b.png
+│   ├── logo.png
+│   ├── nebulas.png
+│   └── tsheets_logo.png
+├── inpage.js
+├── keyfile
+│   └── n1XzMNPQDrSGGVxz3k9MTyXue3nEbqR9UMy
+├── manifest.json
+├── popup.js
+├── README.md
+└── resources
+    ├── add-chrome-extension.png
+    └── download-from-fithub.png
+
+15 directories, 85 files
+
+工作量：
+可以看出html文件夹里面的文件就是上面网页插件的的文件，去除掉这些后, 剩下的需要自己写：
+5个js文件，去掉空格后：
+find ./ -name "*.js" |xargs cat|grep -v ^$|wc -l
+5878
+5878行js代码
+
+2个html文件，去掉空格后：
+find ./ -name "*.html" |xargs cat|grep -v ^$|wc -l
+291
+291行html代码
+
+
+3.metamask统计：
+metamask的插件相关文件在/app，进入/app目录统计：
+ls -lR|grep "^-"|wc -l 
+214
+
+.
+├── fonts
+│   ├── DIN Next
+│   │   ├── DIN Next W01 Bold.otf
+│   │   ├── DIN Next W01 Regular.otf
+│   │   ├── DIN Next W10 Black.otf
+│   │   ├── DIN Next W10 Italic.otf
+│   │   ├── DIN Next W10 Light.otf
+│   │   └── DIN Next W10 Medium.otf
+│   ├── DIN_OT
+│   │   ├── DINOT-2.otf
+│   │   ├── DINOT-Bold 2.otf
+│   │   ├── DINOT-BoldItalic.otf
+│   │   ├── DINOT-Italic 2.otf
+│   │   ├── DINOT-Medium 2.otf
+│   │   └── DINOT-MediumItalic 2.otf
+│   ├── Font_Awesome
+│   │   └── font-awesome.min.css
+│   ├── fonts
+│   │   ├── FontAwesome.otf
+│   │   ├── fontawesome-webfont.eot
+│   │   ├── fontawesome-webfont.svg
+│   │   ├── fontawesome-webfont.ttf
+│   │   ├── fontawesome-webfont.woff
+│   │   └── fontawesome-webfont.woff2
+│   ├── Lato
+│   │   ├── Lato-BlackItalic.ttf
+│   │   ├── Lato-Black.ttf
+│   │   ├── Lato-BoldItalic.ttf
+│   │   ├── Lato-Bold.ttf
+│   │   ├── Lato-HairlineItalic.ttf
+│   │   ├── Lato-Hairline.ttf
+│   │   ├── Lato-Italic.ttf
+│   │   ├── Lato-LightItalic.ttf
+│   │   ├── Lato-Light.ttf
+│   │   ├── Lato-Regular.ttf
+│   │   └── OFL.txt
+│   ├── Montserrat
+│   │   ├── Montserrat-Bold.ttf
+│   │   ├── Montserrat-Bold.woff
+│   │   ├── Montserrat-Light.ttf
+│   │   ├── Montserrat-Light.woff
+│   │   ├── Montserrat-Regular.ttf
+│   │   ├── Montserrat-Regular.woff
+│   │   ├── Montserrat-UltraLight.ttf
+│   │   ├── Montserrat-UltraLight.woff
+│   │   └── OFL.txt
+│   └── Roboto
+│       ├── Roboto-BlackItalic.ttf
+│       ├── Roboto-Black.ttf
+│       ├── Roboto-BoldItalic.ttf
+│       ├── Roboto-Bold.ttf
+│       ├── RobotoCondensed-BoldItalic.ttf
+│       ├── RobotoCondensed-Bold.ttf
+│       ├── RobotoCondensed-Italic.ttf
+│       ├── RobotoCondensed-LightItalic.ttf
+│       ├── RobotoCondensed-Light.ttf
+│       ├── RobotoCondensed-Regular.ttf
+│       ├── Roboto-Italic.ttf
+│       ├── Roboto-LightItalic.ttf
+│       ├── Roboto-Light.ttf
+│       ├── Roboto-MediumItalic.ttf
+│       ├── Roboto-Medium.ttf
+│       ├── Roboto-Regular.ttf
+│       ├── Roboto-ThinItalic.ttf
+│       └── Roboto-Thin.ttf
+├── home.html
+├── images
+│   ├── arrow-right.svg
+│   ├── camera.svg
+│   ├── caret-right.svg
+│   ├── check-white.svg
+│   ├── coinbase logo.png
+│   ├── copy.svg
+│   ├── copy-to-clipboard.svg
+│   ├── deposit-eth.svg
+│   ├── download.svg
+│   ├── eth_logo.svg
+│   ├── forward-carrat.svg
+│   ├── help.svg
+│   ├── icon-128.png
+│   ├── icon-16.png
+│   ├── icon-19.png
+│   ├── icon-32.png
+│   ├── icon-38.png
+│   ├── icon-512.png
+│   ├── icon-64.png
+│   ├── import-account.svg
+│   ├── info-logo.png
+│   ├── key-32.png
+│   ├── loading.svg
+│   ├── lock.svg
+│   ├── metamask-fox.svg
+│   ├── mm-bolt.svg
+│   ├── mm-info-icon.svg
+│   ├── open.svg
+│   ├── plus-btn-white.svg
+│   ├── popout.svg
+│   ├── qr.svg
+│   ├── settings.svg
+│   ├── shapeshift logo.png
+│   ├── switch_acc.svg
+│   └── warning.svg
+├── _locales
+│   ├── cs
+│   │   └── messages.json
+│   ├── de
+│   │   └── messages.json
+│   ├── en
+│   │   └── messages.json
+│   ├── es
+│   │   └── messages.json
+│   ├── fr
+│   │   └── messages.json
+│   ├── hn
+│   │   └── messages.json
+│   ├── index.json
+│   ├── it
+│   │   └── messages.json
+│   ├── ja
+│   │   └── messages.json
+│   ├── ko
+│   │   └── messages.json
+│   ├── nl
+│   │   └── messages.json
+│   ├── ph
+│   │   └── messages.json
+│   ├── pt
+│   │   └── messages.json
+│   ├── ru
+│   │   └── messages.json
+│   ├── sl
+│   │   └── messages.json
+│   ├── th
+│   │   └── messages.json
+│   ├── tml
+│   │   └── messages.json
+│   ├── tr
+│   │   └── messages.json
+│   ├── vi
+│   │   └── messages.json
+│   ├── zh_CN
+│   │   └── messages.json
+│   └── zh_TW
+│       └── messages.json
+├── manifest.json
+├── notification.html
+├── popup.html
+└── scripts
+    ├── account-import-strategies
+    │   └── index.js
+    ├── background.js
+    ├── chromereload.js
+    ├── contentscript.js
+    ├── controllers
+    │   ├── address-book.js
+    │   ├── balance.js
+    │   ├── blacklist.js
+    │   ├── computed-balances.js
+    │   ├── currency.js
+    │   ├── infura.js
+    │   ├── network
+    │   │   ├── enums.js
+    │   │   ├── index.js
+    │   │   ├── network.js
+    │   │   └── util.js
+    │   ├── preferences.js
+    │   ├── README.md
+    │   ├── recent-blocks.js
+    │   ├── shapeshift.js
+    │   ├── token-rates.js
+    │   └── transactions
+    │       ├── index.js
+    │       ├── lib
+    │       │   ├── tx-state-history-helper.js
+    │       │   └── util.js
+    │       ├── nonce-tracker.js
+    │       ├── pending-tx-tracker.js
+    │       ├── README.md
+    │       ├── tx-gas-utils.js
+    │       └── tx-state-manager.js
+    ├── edge-encryptor.js
+    ├── first-time-state.js
+    ├── inpage.js
+    ├── lib
+    │   ├── account-tracker.js
+    │   ├── auto-reload.js
+    │   ├── buy-eth-url.js
+    │   ├── ComposableObservableStore.js
+    │   ├── config-manager.js
+    │   ├── createLoggerMiddleware.js
+    │   ├── createOriginMiddleware.js
+    │   ├── createProviderMiddleware.js
+    │   ├── enums.js
+    │   ├── events-proxy.js
+    │   ├── extractEthjsErrorMessage.js
+    │   ├── get-first-preferred-lang-code.js
+    │   ├── getObjStructure.js
+    │   ├── hex-to-bn.js
+    │   ├── inpage-provider.js
+    │   ├── local-store.js
+    │   ├── message-manager.js
+    │   ├── migrator
+    │   │   └── index.js
+    │   ├── nodeify.js
+    │   ├── notification-manager.js
+    │   ├── pending-balance-calculator.js
+    │   ├── personal-message-manager.js
+    │   ├── port-stream.js
+    │   ├── random-id.js
+    │   ├── reportFailedTxToSentry.js
+    │   ├── seed-phrase-verifier.js
+    │   ├── setupMetamaskMeshMetrics.js
+    │   ├── setupRaven.js
+    │   ├── stream-utils.js
+    │   ├── typed-message-manager.js
+    │   └── util.js
+    ├── metamask-controller.js
+    ├── migrations
+    │   ├── 002.js
+    │   ├── 003.js
+    │   ├── 004.js
+    │   ├── 005.js
+    │   ├── 006.js
+    │   ├── 007.js
+    │   ├── 008.js
+    │   ├── 009.js
+    │   ├── 010.js
+    │   ├── 011.js
+    │   ├── 012.js
+    │   ├── 013.js
+    │   ├── 014.js
+    │   ├── 015.js
+    │   ├── 016.js
+    │   ├── 017.js
+    │   ├── 018.js
+    │   ├── 019.js
+    │   ├── 020.js
+    │   ├── 021.js
+    │   ├── 022.js
+    │   ├── 023.js
+    │   ├── 024.js
+    │   ├── 025.js
+    │   ├── index.js
+    │   ├── _multi-keyring.js
+    │   ├── README.md
+    │   └── template.js
+    ├── notice-controller.js
+    ├── platforms
+    │   ├── extension.js
+    │   ├── sw.js
+    │   └── window.js
+    ├── popup-core.js
+    ├── README.md
+    └── ui.js
+
+
+工作量：
+js文件
+find ./ -name "*.js" |wc -l
+93
+93个js文件，去掉空格后
+find ./ -name "*.js" |xargs cat|grep -v ^$|wc -l
+9348
+9348行js代码
+
+html文件
+find ./ -name "*.html" |wc -l
+3
+3个html文件，去掉空格后40行html代码。
+
+
+
+4.量子链web钱包
+ls -lR|grep "^-"|wc -l 
+114
+
+find ./ -name "*.js" |wc -l
+29
+
+find ./ -name "*.vue" |wc -l
+25
+
+find ./ -name "*.html" |wc -l
+2
+
+
+
+find ./ -name "*.js" |xargs cat|grep -v ^$|wc -l
+1663
+
+find ./ -name "*.html" |xargs cat|grep -v ^$|wc -l
+12
+
+find ./ -name "*.vue" |xargs cat|grep -v ^$|wc -l
+2432
+
+假设一行Vue代码对应一行js代码，
+则大概4000行js代码。
+
+
+
+
+
+
+
+
+
+
+
+
+
+

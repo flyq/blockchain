@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%      
+       window.onload = function (){
+       %>
+    
+      var bigImg = document.createElement("img");     //创建一个img元素
+      bigImg.src="http://www.baidu.com/img/baidu_sylogo1.gif";   //给img元素的src属性赋值
+      //bigImg.width="320";  //320个像素 不用加px
+      var myDiv = document.getElementById('myDiv'); //获得dom对象
+      myDiv.appendChild(bigImg);      //为dom添加子元素img
+      };
+      </script> 
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+  </body>
+</html>

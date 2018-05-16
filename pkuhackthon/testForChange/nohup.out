@@ -1,0 +1,4 @@
+
+> application-name@0.0.1 start /root/workspaces/webServer/test
+> nodejs ./bin/www
+
