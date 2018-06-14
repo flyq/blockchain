@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gephi.org/gexf/1.1draft" xmlns:ns0="xsi" version="1.1" ns0:schemaLocation="http://www.gephi.org/gexf/1.1draft http://gephi.org/gexf/1.1draft.xsd">
+  <meta lastmodified="2018-06-10T11:12:13.490000">
+    <creator>Gephi.org</creator>
+    <description>A Web network</description>
+  </meta>
+  <graph defaultedgetype="undirected" label="A Web network" mode="static">
+    <attributes class="node" mode="dynamic"/>
+    <attributes class="node" mode="static"/>
+    <attributes class="edge" mode="dynamic"/>
+    <attributes class="edge" mode="static"/>
+    <nodes>
+      <node id="1" label="ExName1">
+        <attvalues/>
+        <viz:size value="4"/>
+        <viz:position x="60" y="34"/>
+      </node>
+      <node id="0" label="ExName0">
+        <attvalues/>
+        <viz:size value="1"/>
+        <viz:position x="-73" y="-71"/>
+      </node>
+      <node id="3" label="ExName3">
+        <attvalues/>
+        <viz:size value="4"/>
+        <viz:position x="-22" y="-15"/>
+      </node>
+      <node id="2" label="ExName2">
+        <attvalues/>
+        <viz:size value="2"/>
+        <viz:position x="7" y="-107"/>
+      </node>
+      <node id="5" label="ExName5">
+        <attvalues/>
+        <viz:size value="3"/>
+        <viz:position x="4" y="27"/>
+      </node>
+      <node id="4" label="ExName4">
+        <attvalues/>
+        <viz:size value="2"/>
+        <viz:position x="61" y="-13"/>
+      </node>
+      <node id="6" label="ExName6">
+        <attvalues/>
+        <viz:size value="1"/>
+        <viz:position x="-20" y="-2"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="0" target="0">
+        <attvalues/>
+      </edge>
+      <edge id="1" source="0" target="0">
+        <attvalues/>
+      </edge>
+      <edge id="2" source="1" target="1">
+        <attvalues/>
+      </edge>
+      <edge id="3" source="1" target="0">
+        <attvalues/>
+      </edge>
+      <edge id="4" source="1" target="1">
+        <attvalues/>
+      </edge>
+      <edge id="5" source="0" target="1">
+        <attvalues/>
+      </edge>
+      <edge id="6" source="1" target="3">
+        <attvalues/>
+      </edge>
+      <edge id="7" source="3" target="3">
+        <attvalues/>
+      </edge>
+      <edge id="8" source="2" target="0">
+        <attvalues/>
+      </edge>
+      <edge id="9" source="4" target="2">
+        <attvalues/>
+      </edge>
+      <edge id="10" source="3" target="5">
+        <attvalues/>
+      </edge>
+      <edge id="11" source="1" target="4">
+        <attvalues/>
+      </edge>
+      <edge id="12" source="6" target="5">
+        <attvalues/>
+      </edge>
+      <edge id="13" source="0" target="0">
+        <attvalues/>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
